@@ -1,0 +1,339 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+/*box-sizing布局,保证空间区域不变,不回受padding,border的影响*/
+div,input,img,button,figure{
+	box-sizing: border-box;
+}
+body{
+	background: #f5f5f5;
+	font-size: "微软雅黑";
+}
+img{
+	display: block;
+	max-width: 100%;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.clear{
+	clear: both;
+	overflow: hidden;
+	height: 0;
+}
+/*头部*/
+#header{
+	width: 100%;
+	height: 70px;
+	background-color: #00bfff;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 999;
+}
+#header .center{
+	width: 1260px;
+	height: 70px;
+	margin: 0px auto;
+}
+#header .center .logo{
+	width: 30%;
+	height: 70px;
+	background: url(../img/logo.jpg) left center no-repeat;
+	float: left;
+}
+#header .center .link{
+	width: 60%;
+	height: 70px;
+	line-height: 70px;
+	color: #fff;
+	float: right;
+}
+#header .center .link li{
+	width: 20%;
+	text-align: center;
+	float: left;
+}
+#header .center .link li a{
+	color: white;
+	border-right: 1px solid lightsblue;
+	display: block;
+}
+#header .center .link li a:hover{
+	background: orange;
+}
+/*banner部分*/
+#adver{
+	max-height: 1920px;
+	position: relative;
+	margin: 0px auto;
+}
+#adver .center{
+	width: 40%;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -20%;
+	overflow: hidden;
+	
+}
+#adver .center .search{
+	width: 70%;
+	height: 52px;
+	font-size: 16px;
+	border: 2px solid deepskyblue;
+	padding-left: 10px;
+	border-right: none;
+	float: left;
+}
+#adver .center .butotn{
+	width: 30%;
+	height: 52px;
+	background: deepskyblue;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: bold;
+	border: 2px solid deepskyblue;
+	float: left;
+}
+/*旅游*/
+#tour{
+	max-width: 1620px;
+	height: 1160px;
+	margin: 30px auto;
+	text-align: center;
+	
+}
+#tour .center h2{
+	color: #666666;
+	margin: 10px auto;
+	font-size: 35px;
+	letter-spacing: 3px;
+	/*文本阴影*/
+	text-shadow: 0px 5px 10px #666666;
+}
+#tour .center p a{
+	font-size: 16px;
+	color: #666666;
+}
+#tour .center p a:hover{
+	color: deepskyblue;
+}
+/*图片*/
+.tour figure{
+	position: relative;
+	border:1px solid blue;
+	/*margin: 0px;
+	padding: 0px;*/
+}
+.tuijian{
+	margin-left: 20px;
+	float: left;
+	margin-top: 30px;
+	border: 1px solid deepskyblue;
+	width: 30%;
+	height: 300px;
+	/*position: relative;*/
+}
+.tuijian img{
+	/*position: relative;*/
+	width:100%;
+	height: 240px;
+	text-align: center;
+	
+}
+/*.tour_title{
+	border: 1px solid red;
+	float: left;
+}*/
+.tour_title .title{
+	font-size: 10px;
+	color: red;
+	float: left;
+	font-weight: bold;
+}
+.tuijian .tour_title{
+	font-size: 10px;
+	color: gray;
+}
+.tuijian .info .sat{
+	display: inline-block;
+	color: gray;
+	float: right;
+	margin-right: 8px;
+	margin-bottom: 10px;
+}
+.tuijian .info span{
+	/*position: absolute;*/
+	float: left;
+	display: inline-block;
+	font-size: 10px;
+	color: yellowgreen;
+}
+.tuijian .info span strong{
+	display: inline-block;
+	color: yellowgreen;
+	/*float: left;*/
+	margin-left: 0px;
+	margin-bottom: 0px;
+	font-weight: bold;
+	font-size: 16px;
+}
+.tuijian .type{
+	position: relative;
+	/*position: absolute;*/
+	border: 1px solid gray;
+	float: left;
+	margin-top: -253px;
+	margin-left: -57px;
+	
+	background: gray;
+	color:white;
+}
+/*尾部*/
+#foot{
+	background: deepskyblue;
+	overflow: hidden;
+}
+#foot .top{
+	max-width: 1250;
+	margin: 0px auto;
+}
+#foot .top .block{
+	width: 33%;
+	height: 320px;
+	text-align: left;
+	float: left;
+}
+#foot .top h2{
+	color: #FFFFFF;
+	font-size: 21px;
+	padding: 20px 0ox 0px 20px;
+}	
+#foot .top hr{
+	width: 85px;
+	border: 0px dashed white;
+}
+#foot .top ul{
+	font-size: 18px;
+	text-indent: 20px;
+	line-height: 2;
+}
+#foot .top ul li:hover{
+	color: red;
+	cursor: pointer;
+}
+#foot .version{
+	text-align: center;
+	padding: 10px 0px;
+}
+#foot .bottom{
+	color: white;
+	text-align: center;
+	padding: 20px 0px;
+	background: black;
+}
+
+/*媒体查询*/
+@media (min-width:1200px){
+	
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	#adver .center{
+		width:50%;
+		margin:-20px 0px 0px -25%;
+	}
+}
+/*PAD*/
+@media (min-width: 768px) and (max-width: 991px) {
+	#adver .center{
+		width:60%;
+		margin:-10px 0px 0px -30%;
+	}
+	#tour .center h2{
+		font-size:35px;
+	}
+}
+/*手机--中等屏幕--sm-hidden*/
+@media (min-width: 480px) and (max-width: 767px) {
+	#header,#header .center,#header .link{
+		height: 45px;
+	}
+	#header .logo,.sm-hidden,.version{
+		display: none;
+	}
+	#header .center .link{
+		width:100%;
+		line-height:45px;
+	}
+	#header .center .link li{
+		width:11.5%;
+	}
+	#adver .center{
+		width:70%;
+		height: 55px;
+		margin:-10px 0px 0px -35%;
+	}
+	#adver .center .search,#adver .center .button{
+		height: 45px;
+		font-size:20px;
+	}
+	#tour .center h2{
+		font-size:30px;
+	}
+	#tour .center p{
+		font-size:16px;
+	}
+	#tour figure{
+		width:49%;
+	}
+}
+@media (max-width: 479px){
+	#header,#header .center,#header .link{
+		height: 45px;
+	}
+	#header .logo,.sm-hidden,.xs-hidden,.version{
+		display: none;
+	}
+	#header .center .link{
+		width:100%;
+		line-height:45px;
+	}
+	#header .center .link li{
+		width:8.1%;
+	}
+	#adver{
+		padding:45px 0px 0px 0px;
+	}
+	#adver .center{
+		width:80%;
+		height:48px;
+		margin:-10px 0px 0px -40%;
+	}
+	#adver .center .search,#adver .center .button{
+		height:45px;
+		font-size:16px;
+	}
+	#tour .center h2{
+		font-size:24px;
+	}
+	#tour .center p{
+		font-size:12px;
+	}
+	#tour figure{
+		width:100%;
+	}
+	#foot .version,#foot .bottom{
+		display: block;
+		font-size:13px;
+	}
+
+
+
+
+
